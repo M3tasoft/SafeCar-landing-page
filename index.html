@@ -20,16 +20,16 @@
 
         <!--Nav Links-->
         <div
-          class="nav-links z-20 duration-300 md:static absolute bg-white md:min-h-fit min-h-[35vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5"
+          class="nav-links z-20 duration-300 md:static absolute bg-white md:min-h-fit min-h-[45vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5"
         >
           <ul
             class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8"
           >
-            <li><a class="hover:text-gray-500" href="#">Home</a></li>
-            <li><a class="hover:text-gray-500" href="#">Features</a></li>
-            <li><a class="hover:text-gray-500" href="#">Plans</a></li>
-            <li><a class="hover:text-gray-500" href="#">Testimonies</a></li>
-            <li><a class="hover:text-gray-500" href="#">Contact</a></li>
+            <li><a class="hover:text-gray-500" href="#home">Home</a></li>
+            <li><a class="hover:text-gray-500" href="#features">Features</a></li>
+            <li><a class="hover:text-gray-500" href="#plans">Plans</a></li>
+            <li><a class="hover:text-gray-500" href="#testimonies">Testimonies</a></li>
+            <li><a class="hover:text-gray-500" href="#contact">Contact</a></li>
           </ul>
         </div>
 
@@ -54,8 +54,8 @@
       </nav>
     </header>
 
-    <main class="bg-gray-500 h-screen">
-      <section class="relative flex items-center justify-center min-h-[95vh]">
+    <main class="bg-gray-500">
+      <section id="home" class="relative flex items-center justify-center min-h-[95vh]">
         <img
           src="./assets/img/safecar-hero-driving-inteligente.webp"
           alt="SafeCar Hero"
@@ -86,7 +86,7 @@
         </div>
       </section>
 
-      <section
+      <section id="features"
         class="bg-white py-16 min-h-[100vh] flex items-center justify-center"
       >
         <div class="max-w-6xl w-full mx-auto px-4">
@@ -159,7 +159,7 @@
         </div>
       </section>
 
-      <section
+      <section id="plans"
         class="bg-[#f3f8ff] py-16 flex items-center justify-center min-h-[100vh]"
       >
         <div class="max-w-6xl w-full mx-auto px-4">
@@ -281,7 +281,7 @@
         </div>
       </section>
 
-      <section class="bg-white py-16 min-h-screen">
+      <section id="testimonies" class="bg-white py-16 min-h-screen">
         <div class="max-w-7xl mx-auto px-4">
           <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-10">
             Testimonios de Clientes
@@ -403,7 +403,7 @@
         </div>
       </section>
 
-      <section
+      <section id="contact"
         class="bg-[#eaf2fb] py-16 min-h-screen flex items-center justify-center"
       >
         <div
@@ -466,35 +466,107 @@
         </div>
       </section>
 
-      <section class="bg-white py-16 min-h-screen flex items-center justify-center">
-        <div class="w-full max-w-6xl flex flex-col md:flex-row items-stretch justify-between gap-3 lg:gap-12 px-4 mx-auto">
-
-          <div class="flex-1 flex flex-col items-center justify-center md:justify-start mb-10 md:mb-0">
-            <h2 class="text-3xl font-extrabold text-center mb-8">Acerca de la App</h2>
+      <section
+        class="bg-white py-16 min-h-screen flex items-center justify-center"
+      >
+        <div
+          class="w-full max-w-6xl flex flex-col md:flex-row items-stretch justify-between gap-3 lg:gap-12 px-4 mx-auto"
+        >
+          <div
+            class="flex-1 flex flex-col items-center justify-center md:justify-start mb-10 md:mb-0"
+          >
+            <h2 class="text-3xl font-extrabold text-center mb-8">
+              Acerca de la App
+            </h2>
             <p class="text-lg text-justify max-w-md">
-              SafeCar utiliza tecnología IoT avanzada para conectar tu vehículo a una red inteligente de sensores. Estos sensores recopilan datos en tiempo real sobre el rendimiento del motor, el estado de los componentes y otros parámetros clave. La información se procesa mediante algoritmos de inteligencia artificial para ofrecerte diagnósticos precisos, alertas personalizadas y recomendaciones de mantenimiento proactivo.
+              SafeCar utiliza tecnología IoT avanzada para conectar tu vehículo
+              a una red inteligente de sensores. Estos sensores recopilan datos
+              en tiempo real sobre el rendimiento del motor, el estado de los
+              componentes y otros parámetros clave. La información se procesa
+              mediante algoritmos de inteligencia artificial para ofrecerte
+              diagnósticos precisos, alertas personalizadas y recomendaciones de
+              mantenimiento proactivo.
             </p>
           </div>
 
           <div class="flex-1 flex items-center justify-center">
-            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Demo SafeCar" class="w-full h-80 rounded-xl border border-gray-300 shadow-md" allowfullscreen></iframe>
+            <iframe
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              title="Demo SafeCar"
+              class="w-full h-80 rounded-xl border border-gray-300 shadow-md"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
       </section>
 
-      <section class="bg-[#eaf2fb] py-16 min-h-screen flex items-center justify-center">
-        <div class="w-full max-w-6xl flex flex-col items-stretch justify-between gap-3 px-4 mx-auto">
-
-          <div class="flex-1 flex flex-col items-center justify-center md:justify-start mb-10 md:mb-0">
-            <h2 class="text-3xl font-extrabold text-center mb-8">Nuestro equipo</h2>
+      <section
+        class="bg-[#eaf2fb] py-16 min-h-screen flex items-center justify-center"
+      >
+        <div
+          class="w-full max-w-6xl flex flex-col items-stretch justify-between gap-3 px-4 mx-auto"
+        >
+          <div
+            class="flex-1 flex flex-col items-center justify-center md:justify-start mb-10 md:mb-0"
+          >
+            <h2 class="text-3xl font-extrabold text-center mb-8">
+              Nuestro equipo
+            </h2>
           </div>
 
           <div class="flex-1 flex items-center justify-center">
-            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Demo SafeCar" class="w-full max-w-4xl h-100 rounded-xl border border-gray-300 shadow-md" allowfullscreen></iframe>
+            <iframe
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              title="Demo SafeCar"
+              class="w-full max-w-4xl h-100 rounded-xl border border-gray-300 shadow-md"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
       </section>
     </main>
+
+    <footer class="bg-[#232936] py-8">
+      <div class="max-w-6xl mx-auto px-4 flex flex-col items-center">
+        <nav class="mb-4">
+          <ul
+            class="flex flex-wrap gap-8 justify-center text-white text-base font-medium"
+          >
+            <li><a href="#" class="hover:text-primary">Inicio</a></li>
+            <li><a href="#" class="hover:text-primary">Características</a></li>
+            <li><a href="#" class="hover:text-primary">Planes</a></li>
+            <li><a href="#" class="hover:text-primary">Testimonios</a></li>
+            <li><a href="#" class="hover:text-primary">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="flex gap-8 mb-4">
+          <a href="#" aria-label="Facebook">
+            <img
+              src="./assets/svg/ri_facebook-fill.svg"
+              alt="Facebook"
+              class="w-6 h-6"
+            />
+          </a>
+          <a href="#" aria-label="Instagram">
+            <img
+              src="./assets/svg/streamline_instagram-solid.svg"
+              alt="Instagram"
+              class="w-6 h-6"
+            />
+          </a>
+          <a href="#" aria-label="Twitter">
+            <img
+              src="./assets/svg/mdi_twitter.svg"
+              alt="Twitter"
+              class="w-6 h-6"
+            />
+          </a>
+        </div>
+        <div class="text-white text-sm text-center">
+          © 2025 SafeCar. Todos los derechos reservados.
+        </div>
+      </div>
+    </footer>
 
     <!--Script-->
     <script>
