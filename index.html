@@ -541,19 +541,7 @@
     </footer>
 
     <!--Script-->
-    <script>
-      const navLinks = document.querySelector(".nav-links");
-      const menuIcon = document.getElementById("menuIcon");
-      let menuOpen = false;
-
-      function onToggleMenu() {
-        menuOpen = !menuOpen;
-        navLinks.classList.toggle("top-[9%]");
-        menuIcon.src = menuOpen
-          ? "./assets/svg/close-svgrepo-com.svg"
-          : "./assets/svg/burger-simple-svgrepo-com.svg";
-      }
-    </script>
+  <script src="src/js/nav-menu.js"></script>
     <script src="src/js/i18n.js"></script>
   </body>
 </html>
