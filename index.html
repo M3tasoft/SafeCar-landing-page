@@ -1,14 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./src/styles/output.css" rel="stylesheet">
-  <title>Document</title>
-</head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/styles/output.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <!--Body-->
+  <body class="font-nunito">
+    <!--Header-->
+    <header class="bg-white py-4">
+      <nav class="flex justify-between items-center w-[92%] mx-auto">
+        <!--Logo-->
+        <div>
+          <a class="w-16 cursor-pointer font-bold text-xl lg:text-2xl"
+            >SafeCar</a
+          >
+        </div>
+
+        <!--Nav Links-->
+        <div
+          class="nav-links z-20 duration-300 md:static absolute bg-white md:min-h-fit min-h-[35vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5"
+        >
+          <ul
+            class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8"
+          >
+            <li><a class="hover:text-gray-500" href="#">Home</a></li>
+            <li><a class="hover:text-gray-500" href="#">Features</a></li>
+            <li><a class="hover:text-gray-500" href="#">Plans</a></li>
+            <li><a class="hover:text-gray-500" href="#">Testimonies</a></li>
+            <li><a class="hover:text-gray-500" href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <!--Social Icons-->
+        <div class="flex items-center gap-6">
+          <button
+            class="bg-primary text-white px-5 h-[41px] rounded-[10px] hover:bg-secondary cursor-pointer"
+          >
+            Free trial
+          </button>
+          <img src="assets/svg/global.svg" alt="Global" />
+
+          <!--Menu Icon-->
+          <img
+            id="menuIcon"
+            src="./assets/svg/burger-simple-svgrepo-com.svg"
+            alt="Menu"
+            class="w-8 h-8 cursor-pointer md:hidden"
+            onclick="onToggleMenu()"
+          />
+        </div>
+      </nav>
+    </header>
+
+    <main class="bg-gray-500 h-screen">
+      <section class="relative flex items-center justify-center min-h-[95vh]">
+        <img
+          src="./assets/img/safecar-hero-driving-inteligente.webp"
+          alt="SafeCar Hero"
+          class="absolute inset-0 w-full h-full object-cover brightness-75"
+        />
+        <div
+          class="relative z-10 flex flex-col items-center justify-center text-center px-4"
+        >
+          <h1
+            class="text-white font-extrabold text-4xl md:text-6xl mb-6 drop-shadow-lg font-nunito"
+          >
+            Conduce con Inteligencia,<br />Viaja con Seguridad
+          </h1>
+          <p
+            class="text-white text-lg md:text-2xl mb-8 font-nunito drop-shadow-lg max-w-3xl"
+          >
+            SafeCar te ofrece una visión completa del estado de tu vehículo en
+            tiempo real,<br />
+            con alertas inteligentes y mantenimiento predictivo para una
+            experiencia de conducción más segura y eficiente.
+          </p>
+          <a
+            href="#"
+            class="bg-primary hover:bg-secondary text-white font-bold py-3 px-8 rounded-lg text-lg shadow-lg transition-colors"
+          >
+            Descubre SafeCar
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!--Script-->
+    <script>
+      const navLinks = document.querySelector(".nav-links");
+      const menuIcon = document.getElementById("menuIcon");
+      let menuOpen = false;
+
+      function onToggleMenu() {
+        menuOpen = !menuOpen;
+        navLinks.classList.toggle("top-[9%]");
+        menuIcon.src = menuOpen
+          ? "./assets/svg/close-svgrepo-com.svg"
+          : "./assets/svg/burger-simple-svgrepo-com.svg";
+      }
+    </script>
+  </body>
 </html>
