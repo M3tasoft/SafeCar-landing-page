@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "tw:watch": "tailwindcss -i ./src/styles/tailwind.css -o ./src/styles/output.css --watch"
-  },
+  "dev": "npx @tailwindcss/cli -i ./src/styles/tailwind.css -o ./src/styles/output.css --watch",
+  "build:css": "npx @tailwindcss/cli -i ./src/styles/tailwind.css -o ./src/styles/output.css -m"
+},
   "repository": {
     "type": "git",
     "url": "git@github-main:M3tasoft/SafeCar-landing-page.git"
