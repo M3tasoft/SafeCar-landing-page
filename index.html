@@ -25,11 +25,11 @@
           <ul
             class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8"
           >
-            <li><a class="hover:text-gray-500" href="#home">Home</a></li>
-            <li><a class="hover:text-gray-500" href="#features">Features</a></li>
-            <li><a class="hover:text-gray-500" href="#plans">Plans</a></li>
-            <li><a class="hover:text-gray-500" href="#testimonies">Testimonials</a></li>
-            <li><a class="hover:text-gray-500" href="#contact">Contact</a></li>
+            <li><a class="hover:text-gray-500" href="#home" data-i18n="home">Home</a></li>
+            <li><a class="hover:text-gray-500" href="#features" data-i18n="features">Features</a></li>
+            <li><a class="hover:text-gray-500" href="#plans" data-i18n="plans">Plans</a></li>
+            <li><a class="hover:text-gray-500" href="#testimonies" data-i18n="testimonials">Testimonials</a></li>
+            <li><a class="hover:text-gray-500" href="#contact" data-i18n="contact">Contact</a></li>
           </ul>
         </div>
 
@@ -38,9 +38,12 @@
           <button
             class="bg-primary text-white px-5 h-[41px] rounded-[10px] hover:bg-secondary cursor-pointer"
           >
-            Free trial
+            <span data-i18n="free_trial">Free trial</span>
           </button>
-          <img src="assets/svg/global.svg" alt="Global" />
+
+          <button id="lang_toggle" aria-label="Change language" class="focus:outline-none">
+            <img src="assets/svg/global.svg" alt="Global" id="lang_icon" class="w-8 h-8 transition-all" />
+          </button>
 
           <!--Menu Icon-->
           <img
@@ -67,19 +70,18 @@
           <h1
             class="text-white font-extrabold text-4xl md:text-6xl mb-6 drop-shadow-lg"
           >
-            Drive Smart,<br />Travel Safe
+            <span data-i18n="hero_title">Drive Smart, Travel Safe</span>
           </h1>
           <p
             class="text-white text-lg md:text-2xl mb-8 drop-shadow-lg max-w-3xl"
           >
-            SafeCar gives you a complete view of your vehicle's status in real time,<br />
-            with smart alerts and predictive maintenance for a safer and more efficient driving experience.
+            <span data-i18n="hero_desc">SafeCar gives you a complete view of your vehicle's status in real time, with smart alerts and predictive maintenance for a safer and more efficient driving experience.</span>
           </p>
           <a
             href="#"
             class="bg-primary hover:bg-secondary text-white font-bold py-3 px-8 rounded-lg text-lg shadow-lg transition-colors"
           >
-            Discover SafeCar
+            <span data-i18n="discover">Discover SafeCar</span>
           </a>
         </div>
       </section>
@@ -89,10 +91,10 @@
       >
         <div class="max-w-6xl w-full mx-auto px-4">
           <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-4">
-            Benefits that make the difference
+            <span data-i18n="benefits_title">Benefits that make the difference</span>
           </h2>
           <p class="text-center text-lg md:text-xl text-gray-800 mb-12">
-            With SafeCar, you not only take care of your vehicle, you also gain peace of mind and save time and money.
+            <span data-i18n="benefits_desc">With SafeCar, you not only take care of your vehicle, you also gain peace of mind and save time and money.</span>
           </p>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Beneficio 1 -->
@@ -107,10 +109,10 @@
                 />
               </span>
               <h3 class="text-xl font-bold mb-3 text-center">
-                Enhanced Safety
+                <span data-i18n="benefit_1">Enhanced Safety</span>
               </h3>
               <p class="text-gray-700 text-center">
-                Anticipate potential problems and receive early alerts to avoid breakdowns and ensure your safety on the road.
+                <span data-i18n="benefit_1_desc">Anticipate potential problems and receive early alerts to avoid breakdowns and ensure your safety on the road.</span>
               </p>
             </div>
             <!-- Beneficio 2 -->
@@ -125,10 +127,10 @@
                 />
               </span>
               <h3 class="text-xl font-bold mb-3 text-center">
-                Smart Maintenance
+                <span data-i18n="benefit_2">Smart Maintenance</span>
               </h3>
               <p class="text-gray-700 text-center">
-                Optimize your vehicle's performance with accurate diagnostics and personalized maintenance recommendations.
+                <span data-i18n="benefit_2_desc">Optimize your vehicle's performance with accurate diagnostics and personalized maintenance recommendations.</span>
               </p>
             </div>
             <!-- Beneficio 3 -->
@@ -143,10 +145,10 @@
                 />
               </span>
               <h3 class="text-xl font-bold mb-3 text-center">
-                Save Time and Money
+                <span data-i18n="benefit_3">Save Time and Money</span>
               </h3>
               <p class="text-gray-700 text-center">
-                Reduce repair costs and maximize your car's lifespan with proactive and efficient maintenance.
+                <span data-i18n="benefit_3_desc">Reduce repair costs and maximize your car's lifespan with proactive and efficient maintenance.</span>
               </p>
             </div>
           </div>
@@ -158,7 +160,7 @@
       >
         <div class="max-w-6xl w-full mx-auto px-4">
           <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-10">
-            SafeCar Plans
+            <span data-i18n="plans_title">SafeCar Plans</span>
           </h2>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Básico -->
@@ -186,7 +188,7 @@
                 <button
                   class="bg-primary text-white font-bold py-3 px-8 rounded-lg text-lg shadow-lg transition-colors hover:bg-secondary w-full"
                 >
-                  Select
+                  <span data-i18n="select">Select</span>
                 </button>
               </div>
             </div>
@@ -266,7 +268,7 @@
       <section id="testimonies" class="bg-white py-16 min-h-screen">
         <div class="max-w-7xl mx-auto px-4">
           <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-10">
-            Customer Testimonials
+            <span data-i18n="testimonials_title">Customer Testimonials</span>
           </h2>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
             <!-- Testimonio -->
@@ -292,7 +294,7 @@
                 <img src="./assets/svg/star.svg" alt="Star" class="w-6 h-6" />
               </div>
               <p class="text-gray-700 text-base text-justify">
-                "SafeCar has transformed my driving experience. I feel much safer and more relaxed knowing I have accurate information about my car's condition."
+                <span data-i18n="testimonial">SafeCar has transformed my driving experience. I feel much safer and more relaxed knowing I have accurate information about my car's condition.</span>
               </p>
             </div>
             <!-- Testimonio -->
@@ -401,10 +403,10 @@
 
           <div class="flex-1 max-w-xl w-full flex items-center">
             <div class="w-full">
-              <h2 class="text-3xl font-extrabold text-center mb-8">Contact</h2>
+              <h2 class="text-3xl font-extrabold text-center mb-8"><span data-i18n="contact">Contact</span></h2>
               <form class="flex flex-col gap-6">
                 <div>
-                  <label for="name" class="block text-xl mb-2">Name</label>
+                  <label for="name" class="block text-xl mb-2"><span data-i18n="name">Name</span></label>
                   <input
                     type="text"
                     id="name"
@@ -413,7 +415,7 @@
                   />
                 </div>
                 <div>
-                  <label for="email" class="block text-xl mb-2">Email</label>
+                  <label for="email" class="block text-xl mb-2"><span data-i18n="email">Email</span></label>
                   <input
                     type="email"
                     id="email"
@@ -422,7 +424,7 @@
                   />
                 </div>
                 <div>
-                  <label for="message" class="block text-xl mb-2">Message</label>
+                  <label for="message" class="block text-xl mb-2"><span data-i18n="message">Message</span></label>
                   <textarea
                     id="message"
                     name="message"
@@ -434,7 +436,7 @@
                   type="submit"
                   class="bg-primary text-white font-bold py-3 px-8 rounded-xl text-lg shadow-lg transition-colors hover:bg-secondary w-full"
                 >
-                  Send
+                  <span data-i18n="send">Send</span>
                 </button>
               </form>
             </div>
@@ -452,10 +454,10 @@
             class="flex-1 flex flex-col items-center justify-center md:justify-start mb-10 md:mb-0"
           >
             <h2 class="text-3xl font-extrabold text-center mb-8">
-              About the App
+              <span data-i18n="about_title">About the App</span>
             </h2>
             <p class="text-lg text-justify max-w-md">
-              SafeCar uses advanced IoT technology to connect your vehicle to an intelligent sensor network. These sensors collect real-time data on engine performance, component status, and other key parameters. The information is processed using artificial intelligence algorithms to provide you with accurate diagnostics, personalized alerts, and proactive maintenance recommendations.
+              <span data-i18n="about_desc">SafeCar uses advanced IoT technology to connect your vehicle to an intelligent sensor network. These sensors collect real-time data on engine performance, component status, and other key parameters. The information is processed using artificial intelligence algorithms to provide you with accurate diagnostics, personalized alerts, and proactive maintenance recommendations.</span>
             </p>
           </div>
 
@@ -480,7 +482,7 @@
             class="flex-1 flex flex-col items-center justify-center md:justify-start mb-10 md:mb-0"
           >
             <h2 class="text-3xl font-extrabold text-center mb-8">
-              Our Team
+              <span data-i18n="team_title">Our Team</span>
             </h2>
           </div>
 
@@ -502,11 +504,11 @@
           <ul
             class="flex flex-wrap gap-8 justify-center text-white text-base font-medium"
           >
-            <li><a href="#home" class="hover:text-primary">Home</a></li>
-            <li><a href="#features" class="hover:text-primary">Features</a></li>
-            <li><a href="#plans" class="hover:text-primary">Plans</a></li>
-            <li><a href="#testimonies" class="hover:text-primary">Testimonials</a></li>
-            <li><a href="#contact" class="hover:text-primary">Contact</a></li>
+            <li><a href="#home" class="hover:text-primary" data-i18n="home">Home</a></li>
+            <li><a href="#features" class="hover:text-primary" data-i18n="features">Features</a></li>
+            <li><a href="#plans" class="hover:text-primary" data-i18n="plans">Plans</a></li>
+            <li><a href="#testimonies" class="hover:text-primary" data-i18n="testimonials">Testimonials</a></li>
+            <li><a href="#contact" class="hover:text-primary" data-i18n="contact">Contact</a></li>
           </ul>
         </nav>
         <div class="flex gap-8 mb-4">
@@ -533,7 +535,7 @@
           </a>
         </div>
         <div class="text-white text-sm text-center">
-          © 2025 SafeCar. All rights reserved.
+          <span data-i18n="copyright">© 2025 SafeCar. All rights reserved.</span>
         </div>
       </div>
     </footer>
@@ -552,5 +554,6 @@
           : "./assets/svg/burger-simple-svgrepo-com.svg";
       }
     </script>
+    <script src="src/js/i18n.js"></script>
   </body>
 </html>
